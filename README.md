@@ -8,7 +8,6 @@
 - Edited messages handler.
 - User info.
 - Avatar stealer (lol)
-- Export documents as Markdown, HTML and PDF
 
 ### To do:
 - Mass role via NoSQL
