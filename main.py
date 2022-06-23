@@ -7,19 +7,19 @@ client = commands.Bot(command_prefix='.')
 
 @client.command()
 async def load(ctx, extension):
-    if ctx.author.id == 342212467046350849:
+    if ctx.author.id == '': # Ваш id (int), либо список из id для управления cogs.
         client.load_extension(f'cogs.{extension}')
         print(f'Класс {extension} был загружен\n')
 
 @client.command()
 async def unload(ctx, extension):
-    if ctx.author.id == 342212467046350849:
+    if ctx.author.id == '':
         client.unload_extension(f'cogs.{extension}')
         print(f'Класс {extension} был выгружен\n')
 
 @client.command()
 async def reload(ctx, extension):
-    if ctx.author.id == 342212467046350849:
+    if ctx.author.id == '':
         client.reload_extension(f'cogs.{extension}')
         print(f'Класс {extension} был перезапущен\n')
 

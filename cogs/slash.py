@@ -39,12 +39,6 @@ class Slash(commands.Cog):
         embed.add_field(name="Registered", value=member.created_at.strftime(date_format))
         await ctx.respond(embed=embed)
 
-        
-
-
-
-
-
-
+    
 def setup(client):
     client.add_cog(Slash(client))
